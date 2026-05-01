@@ -1,0 +1,676 @@
+<!doctype html>
+<html lang="english">
+  <head>
+    <title>Hero Bot</title>
+    <meta property="og:title" content="exported project" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
+      body {
+        margin: 0;
+      }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        -webkit-font-smoothing: antialiased;
+      }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      figure,
+      blockquote,
+      figcaption {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: transparent;
+      }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
+      button,
+      select {
+        text-transform: none;
+      }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+        color: inherit;
+      }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
+      pre {
+        white-space: normal;
+      }
+      input {
+        padding: 2px 4px;
+      }
+      img {
+        display: block;
+      }
+      details {
+        display: block;
+        margin: 0;
+        padding: 0;
+      }
+      summary::-webkit-details-marker {
+        display: none;
+      }
+      [data-thq="accordion"] [data-thq="accordion-content"] {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        padding: 0;
+      }
+      [data-thq="accordion"]
+        details[data-thq="accordion-trigger"][open]
+        + [data-thq="accordion-content"] {
+        max-height: 1000vh;
+      }
+      details[data-thq="accordion-trigger"][open]
+        summary
+        [data-thq="accordion-icon"] {
+        transform: rotate(180deg);
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-theme-neutral-dark);
+        background: var(--dl-color-theme-neutral-light);
+
+        fill: var(--dl-color-theme-neutral-dark);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css">
+  </head>
+  <body>
+    <div>
+      <div class="root-container1">
+        <div class="root-thq-root-elm">
+          <img
+            src="Background.png"
+            alt="Background126"
+            class="root-thq-background-elm1"
+          />
+          <img
+            src="public/background127-u35w-700h.png"
+            alt="Background127"
+            class="root-thq-background-elm2"
+          />
+          <div class="root-thq-frame77-elm">
+            <div class="root-thq-frame76-elm1">
+              <span class="root-thq-text-elm10">SCHEDULE</span>
+            </div>
+          </div>
+          <div class="root-thq-frame78-elm">
+            <div class="root-thq-frame76-elm2">
+              <span class="root-thq-text-elm11">CONTINUE</span>
+            </div>
+          </div>
+          <span class="root-thq-text-elm12">Website Name</span>
+          <img
+            src="public/background140-09xo-200h.png"
+            alt="Background140"
+            class="root-thq-background-elm3"
+          />
+          <div class="root-thq-groups-elm1">
+            <div class="root-thq-footer-elm">
+              <span class="root-thq-text-elm13">
+                © 2026 HEROBOT. ALL RIGHTS RESERVED.
+              </span>
+              <span class="root-thq-text-elm14">PRIVACY POLICY</span>
+              <span class="root-thq-text-elm15">POWERED BY HEROBOT</span>
+            </div>
+          </div>
+          <div class="root-thq-groups-elm2">
+            <img
+              src="public/background148-jmin-200h.png"
+              alt="Background148"
+              class="root-thq-background-elm4"
+            />
+            <div class="root-thq-group269-elm">
+              <img
+                src="public/verticaldivider150-iwjf-200w.png"
+                alt="VerticalDivider150"
+                class="root-thq-vertical-divider-elm1"
+              />
+              <button class="root-thq-button-elm">
+                <img
+                  src="public/sun1svgrepocom1i151-m6mn.svg"
+                  alt="sun1svgrepocom1I151"
+                  class="root-thq-sun1svgrepocom1-elm"
+                />
+              </button>
+              <img
+                src="public/verticaldivider152-0vz-200w.png"
+                alt="VerticalDivider152"
+                class="root-thq-vertical-divider-elm2"
+              />
+              <div class="root-thq-group2-elm">
+                <img
+                  src="public/ellipse7154-hl92-200h.png"
+                  alt="Ellipse7154"
+                  class="root-thq-ellipse7-elm1"
+                />
+                <div class="root-thq-maskgroup-elm">
+                  <img
+                    src="public/ellipse7156-9k3m-200h.png"
+                    alt="Ellipse7156"
+                    class="root-thq-ellipse7-elm2"
+                  />
+                  <img
+                    src="public/image2157-1ehm-200h.png"
+                    alt="image2157"
+                    class="root-thq-image2-elm"
+                  />
+                </div>
+              </div>
+              <img
+                src="public/rectangle229158-qu5y.svg"
+                alt="Rectangle229158"
+                class="root-thq-rectangle229-elm"
+              />
+            </div>
+          </div>
+          <img
+            src="public/line17159-yj28.svg"
+            alt="Line17159"
+            class="root-thq-line17-elm"
+          />
+          <div class="root-thq-group302-elm">
+            <img
+              src="public/line15161-37po.svg"
+              alt="Line15161"
+              class="root-thq-line15-elm"
+            />
+            <img
+              src="public/background162-j2p-200h.png"
+              alt="Background162"
+              class="root-thq-background-elm5"
+            />
+            <img
+              src="public/send2svgrepocom163-ntf4i.svg"
+              alt="send2svgrepocom163"
+              class="root-thq-send2svgrepocom-elm"
+            />
+            <span class="root-thq-text-elm16">https://example.com</span>
+            <img
+              src="public/background166-bhw4-200h.png"
+              alt="Background166"
+              class="root-thq-background-elm6"
+            />
+            <span class="root-thq-text-elm17">Type here...</span>
+            <span class="root-thq-text-elm18">Project Name</span>
+            <div class="root-thq-group273-elm">
+              <div class="root-thq-group274-elm">
+                <div class="root-thq-group276-elm">
+                  <div class="root-thq-frame137-elm">
+                    <div class="root-thq-frame90-elm">
+                      <img
+                        src="public/documentsvgrepocom174-ry1.svg"
+                        alt="documentsvgrepocom174"
+                        class="root-thq-documentsvgrepocom-elm1"
+                      />
+                      <span class="root-thq-text-elm19">Documents</span>
+                    </div>
+                    <div class="root-thq-page1-elm">
+                      <div class="root-thq-icon-set-elm">
+                        <img
+                          src="public/pluscircle185-ix8l.svg"
+                          alt="pluscircle185"
+                          class="root-thq-pluscircle-elm"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="root-thq-frame138-elm">
+                    <div class="root-thq-frame91-elm">
+                      <img
+                        src="public/playintegrityapicheckersvgrepocom1188-kzhk.svg"
+                        alt="playintegrityapicheckersvgrepocom1188"
+                        class="root-thq-playintegrityapicheckersvgrepocom1-elm"
+                      />
+                      <span class="root-thq-text-elm20">API</span>
+                    </div>
+                    <img
+                      src="public/pluscirclesvgrepocom194-3gv.svg"
+                      alt="pluscirclesvgrepocom194"
+                      class="root-thq-pluscirclesvgrepocom-elm1"
+                    />
+                  </div>
+                  <div class="root-thq-frame139-elm">
+                    <div class="root-thq-frame92-elm">
+                      <img
+                        src="public/textalignleftsvgrepocom11100-4z1g.svg"
+                        alt="textalignleftsvgrepocom11100"
+                        class="root-thq-textalignleftsvgrepocom1-elm"
+                      />
+                      <span class="root-thq-text-elm21">Text</span>
+                    </div>
+                    <img
+                      src="public/pluscirclesvgrepocom1106-h5ia.svg"
+                      alt="pluscirclesvgrepocom1106"
+                      class="root-thq-pluscirclesvgrepocom-elm2"
+                    />
+                  </div>
+                </div>
+              </div>
+              <span class="root-thq-text-elm22">Add Knowledge Source</span>
+              <span class="root-thq-text-elm23">
+                You can add multiple knowledge sources to your website, upload
+                documents, API and Text.
+              </span>
+            </div>
+            <img
+              src="public/line181112-ljyi.svg"
+              alt="Line181112"
+              class="root-thq-line18-elm"
+            />
+          </div>
+          <img
+            src="public/line161113-ebn.svg"
+            alt="Line161113"
+            class="root-thq-line16-elm"
+          />
+          <div class="root-thq-group277-elm">
+            <div class="root-thq-group278-elm">
+              <img
+                src="public/documentsvgrepocom1116-2r6s.svg"
+                alt="documentsvgrepocom1116"
+                class="root-thq-documentsvgrepocom-elm2"
+              />
+              <img
+                src="public/playintegrityapicheckersvgrepocom21121-f88t.svg"
+                alt="playintegrityapicheckersvgrepocom21121"
+                class="root-thq-playintegrityapicheckersvgrepocom2-elm"
+              />
+              <img
+                src="public/textalignleftsvgrepocom21126-ji4h.svg"
+                alt="textalignleftsvgrepocom21126"
+                class="root-thq-textalignleftsvgrepocom2-elm"
+              />
+            </div>
+            <span class="root-thq-text-elm24">No Result Yet</span>
+            <span class="root-thq-text-elm25">
+              Your crawled website data will display here..
+            </span>
+          </div>
+          <div class="root-thq-group284-elm">
+            <div class="root-thq-navigation-big-elm">
+              <img
+                src="public/rectangle3241135-z1a9-300w.png"
+                alt="Rectangle3241135"
+                class="root-thq-rectangle324-elm"
+              />
+              <div class="root-thq-group283-elm">
+                <div class="root-thq-section-elm">
+                  <div class="root-thq-frame72-elm1"></div>
+                </div>
+                <div class="root-thq-group265-elm">
+                  <div class="root-thq-mask-group-elm">
+                    <img
+                      src="public/union1142-rm9.svg"
+                      alt="Union1142"
+                      class="root-thq-union-elm1"
+                    />
+                    <img
+                      src="public/union1145-uz3l.svg"
+                      alt="Union1145"
+                      class="root-thq-union-elm2"
+                    />
+                  </div>
+                </div>
+                <div class="root-thq-frame72-elm2">
+                  <div class="root-thq-frame12-elm1">
+                    <div class="root-thq-group7-elm1">
+                      <img
+                        src="public/vector1151-zji.svg"
+                        alt="Vector1151"
+                        class="root-thq-vector-elm1"
+                      />
+                      <img
+                        src="public/vector1152-5sj.svg"
+                        alt="Vector1152"
+                        class="root-thq-vector-elm2"
+                      />
+                      <img
+                        src="public/line1821153-cvk.svg"
+                        alt="Line1821153"
+                        class="root-thq-line182-elm"
+                      />
+                      <img
+                        src="public/line1831154-k1xf.svg"
+                        alt="Line1831154"
+                        class="root-thq-line183-elm"
+                      />
+                      <img
+                        src="public/line1841155-a1v.svg"
+                        alt="Line1841155"
+                        class="root-thq-line184-elm"
+                      />
+                    </div>
+                  </div>
+                  <div class="root-thq-frame37-elm">
+                    <span class="root-thq-text-elm26">Add Knowledge</span>
+                  </div>
+                </div>
+              </div>
+              <div class="root-thq-frame125-elm">
+                <div class="root-thq-frame140-elm">
+                  <div class="root-thq-frame96-elm">
+                    <div class="root-thq-frame95-elm">
+                      <div class="root-thq-frame94-elm">
+                        <img
+                          src="public/codescansvgrepocom11163-s0on.svg"
+                          alt="codescansvgrepocom11163"
+                          class="root-thq-codescansvgrepocom1-elm"
+                        />
+                        <span class="root-thq-text-elm27">
+                          Review &amp; Test
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="root-thq-frame98-elm">
+                    <div class="root-thq-frame97-elm">
+                      <img
+                        src="public/iconoutlinemessagetext1169-3se.svg"
+                        alt="IconOutlinemessagetext1169"
+                        class="root-thq-icon-outlinemessagetext-elm"
+                      />
+                      <span class="root-thq-text-elm28">Behaviour</span>
+                    </div>
+                  </div>
+                  <div class="root-thq-frame100-elm">
+                    <div class="root-thq-frame99-elm">
+                      <img
+                        src="public/frame121174-a5ra.svg"
+                        alt="Frame121174"
+                        class="root-thq-frame12-elm2"
+                      />
+                      <span class="root-thq-text-elm29">Design</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="root-thq-frame141-elm">
+                  <div class="root-thq-frame121-elm">
+                    <span class="root-thq-text-elm30">CONNECT</span>
+                  </div>
+                  <div class="root-thq-frame102-elm">
+                    <div class="root-thq-frame101-elm">
+                      <div class="root-thq-frame12-elm3">
+                        <div class="root-thq-dashboard-elm">
+                          <img
+                            src="public/fill11184-r5t.svg"
+                            alt="Fill11184"
+                            class="root-thq-fill1-elm1"
+                          />
+                          <img
+                            src="public/fill31187-civk.svg"
+                            alt="Fill31187"
+                            class="root-thq-fill3-elm1"
+                          />
+                          <img
+                            src="public/fill51190-qyy.svg"
+                            alt="Fill51190"
+                            class="root-thq-fill5-elm1"
+                          />
+                          <img
+                            src="public/fill71193-1mr.svg"
+                            alt="Fill71193"
+                            class="root-thq-fill7-elm"
+                          />
+                        </div>
+                      </div>
+                      <span class="root-thq-text-elm31">Workflows</span>
+                    </div>
+                  </div>
+                  <div class="root-thq-frame122-elm1">
+                    <div class="root-thq-frame105-elm">
+                      <img
+                        src="public/integrationsvgrepocom11199-koex.svg"
+                        alt="integrationsvgrepocom11199"
+                        class="root-thq-integrationsvgrepocom1-elm"
+                      />
+                      <span class="root-thq-text-elm32">Integrations</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="root-thq-frame142-elm">
+                  <div class="root-thq-frame122-elm2">
+                    <span class="root-thq-text-elm33">TRACK</span>
+                  </div>
+                  <div class="root-thq-frame108-elm">
+                    <div class="root-thq-frame107-elm">
+                      <img
+                        src="public/cloudmonitoringsvgrepocom11208-m0rvh.svg"
+                        alt="cloudmonitoringsvgrepocom11208"
+                        class="root-thq-cloudmonitoringsvgrepocom1-elm"
+                      />
+                      <span class="root-thq-text-elm34">Analytics</span>
+                    </div>
+                  </div>
+                  <div class="root-thq-frame112-elm">
+                    <div class="root-thq-frame111-elm">
+                      <div class="root-thq-messagetext-elm">
+                        <img
+                          src="public/vector1216-nok7.svg"
+                          alt="Vector1216"
+                          class="root-thq-vector-elm3"
+                        />
+                        <img
+                          src="public/vector1217-zpk.svg"
+                          alt="Vector1217"
+                          class="root-thq-vector-elm4"
+                        />
+                        <img
+                          src="public/vector1218-vgjr.svg"
+                          alt="Vector1218"
+                          class="root-thq-vector-elm5"
+                        />
+                      </div>
+                      <span class="root-thq-text-elm35">Conversation</span>
+                    </div>
+                  </div>
+                  <div class="root-thq-frame110-elm">
+                    <div class="root-thq-frame109-elm">
+                      <img
+                        src="public/vector1222-fkk1p.svg"
+                        alt="Vector1222"
+                        class="root-thq-vector-elm6"
+                      />
+                      <span class="root-thq-text-elm36">Usage Overview</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="root-thq-frame143-elm">
+                  <div class="root-thq-frame123-elm">
+                    <span class="root-thq-text-elm37">MANAGE</span>
+                  </div>
+                  <div class="root-thq-frame114-elm">
+                    <div class="root-thq-frame113-elm">
+                      <img
+                        src="public/teamsvgrepocom11229-yqjr.svg"
+                        alt="teamsvgrepocom11229"
+                        class="root-thq-teamsvgrepocom1-elm"
+                      />
+                      <span class="root-thq-text-elm38">Team Access</span>
+                    </div>
+                  </div>
+                  <div class="root-thq-frame116-elm">
+                    <div class="root-thq-frame115-elm">
+                      <div class="root-thq-setting-elm">
+                        <img
+                          src="public/vector1237-gitm.svg"
+                          alt="Vector1237"
+                          class="root-thq-vector-elm7"
+                        />
+                        <img
+                          src="public/vector1238-m1m.svg"
+                          alt="Vector1238"
+                          class="root-thq-vector-elm8"
+                        />
+                      </div>
+                      <span class="root-thq-text-elm39">Account Settings</span>
+                    </div>
+                  </div>
+                  <div class="root-thq-frame118-elm">
+                    <div class="root-thq-frame117-elm">
+                      <div class="root-thq-wallet-elm">
+                        <img
+                          src="public/fill11244-ozn.svg"
+                          alt="Fill11244"
+                          class="root-thq-fill1-elm2"
+                        />
+                        <img
+                          src="public/fill31245-90f.svg"
+                          alt="Fill31245"
+                          class="root-thq-fill3-elm2"
+                        />
+                        <div class="root-thq-group7-elm2">
+                          <img
+                            src="public/fill51248-mcmv.svg"
+                            alt="Fill51248"
+                            class="root-thq-fill5-elm2"
+                          />
+                        </div>
+                        <img
+                          src="public/fill81251-3ywf.svg"
+                          alt="Fill81251"
+                          class="root-thq-fill8-elm"
+                        />
+                      </div>
+                      <span class="root-thq-text-elm40">Billing</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="root-thq-frame65-elm">
+                <span class="root-thq-text-elm41">BUILD</span>
+              </div>
+              <div class="root-thq-hero-bot-elm"></div>
+            </div>
+            <div class="root-thq-arrow-elm">
+              <div class="root-thq-iconly-light-arrow-left5-elm">
+                <div class="root-thq-iconly-light-arrow-left2-elm">
+                  <div class="root-thq-arrow-left2-elm">
+                    <img
+                      src="public/stroke1i125-4ewi.svg"
+                      alt="Stroke1I125"
+                      class="root-thq-stroke1-elm"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const sidebar = document.querySelector(".root-thq-group284-elm");
+    const arrowBtn = document.querySelector(".root-thq-arrow-elm");
+
+    if (sidebar && arrowBtn) {
+      // Toggle sidebar when clicking the arrow
+      arrowBtn.addEventListener("click", (e) => {
+        e.stopPropagation(); // Prevents the click from instantly triggering the document click listener below
+        sidebar.classList.toggle("sidebar-open");
+      });
+
+      // Automatically close sidebar if clicking anywhere outside of it
+      document.addEventListener("click", (e) => {
+        // Only trigger on mobile/tablet views where the sidebar acts as a drawer
+        if (window.innerWidth <= 991 && sidebar.classList.contains("sidebar-open")) {
+          // If the click happened outside the sidebar container
+          if (!sidebar.contains(e.target)) {
+            sidebar.classList.remove("sidebar-open");
+          }
+        }
+      });
+    }
+  });
+</script>
+  </body>
+</html>
